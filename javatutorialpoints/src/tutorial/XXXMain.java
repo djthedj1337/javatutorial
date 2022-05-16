@@ -1,4 +1,4 @@
-package djin.com;
+package tutorial;
 
 public class XXXMain {
     public static void main(String[] s) {
