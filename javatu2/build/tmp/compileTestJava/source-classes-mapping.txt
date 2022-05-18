@@ -1,0 +1,4 @@
+com/jin/rose/ExceptionTest.java
+ com.jin.rose.ExceptionTest
+com/jin/rose/PersonTest.java
+ com.jin.rose.PersonTest
