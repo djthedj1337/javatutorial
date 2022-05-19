@@ -2,3 +2,10 @@ com/jin/rose/ExceptionTest.java
  com.jin.rose.ExceptionTest
 com/jin/rose/PersonTest.java
  com.jin.rose.PersonTest
+com/jin/rose/AnonymousInnerTest.java
+ com.jin.rose.AnonymousInnerTest
+ com.jin.rose.AnonymousInnerTest$1
+com/jin/rose/StaticVNonStaticInnerTest.java
+ com.jin.rose.StaticVNonStaticInnerTest
+com/jin/rose/SuperSubClassTest.java
+ com.jin.rose.SuperSubClassTest

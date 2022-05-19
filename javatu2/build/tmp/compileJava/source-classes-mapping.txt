@@ -1,6 +1,18 @@
-com/jin/rose/Person.java
- com.jin.rose.Person
+com/jin/rose/StaticNested.java
+ com.jin.rose.StaticNested
+ com.jin.rose.StaticNested$StaticInner
 com/jin/rose/InsufficientFundsException.java
  com.jin.rose.InsufficientFundsException
+com/jin/rose/NonStaticNested.java
+ com.jin.rose.NonStaticNested
+ com.jin.rose.NonStaticNested$NonStaticInner
 com/jin/rose/CheckingsAccount.java
  com.jin.rose.CheckingsAccount
+com/jin/rose/AnonymousInner.java
+ com.jin.rose.AnonymousInner
+com/jin/rose/Person.java
+ com.jin.rose.Person
+com/jin/rose/SuperExample.java
+ com.jin.rose.SuperExample
+com/jin/rose/SubExample.java
+ com.jin.rose.SubExample
