@@ -3,6 +3,7 @@ package com.jin.rose;
 public class SuperExample {
     private int num;
 
+
     public SuperExample(){};
 
     public SuperExample(int num){

@@ -19,6 +19,7 @@ public class SuperSubClassTest {
         //Below will showcase sub method of move
         b.move();
         //b.sub() will result in a compiling error
+
         c.move();
         //below reuires direct reference to subclass which it does, otherwise it will not work i.e. b.sub()
         c.sub();

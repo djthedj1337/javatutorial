@@ -27,6 +27,10 @@ Types of Inheritance:
 Overriding:
 : ability to override a superclass method IF the method is not final
 
+**Static Methods, Final methods, and Constructors CANNOT be overridden (static can be "re-declared");
+
+Virtual Method:
+- when an object is declared and is referred to the super class but is an object of thesubclass, only the overridden methods within the subclass will be used
 
 
  */

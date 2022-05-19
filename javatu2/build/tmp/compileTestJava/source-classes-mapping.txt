@@ -9,3 +9,5 @@ com/jin/rose/StaticVNonStaticInnerTest.java
  com.jin.rose.StaticVNonStaticInnerTest
 com/jin/rose/SuperSubClassTest.java
  com.jin.rose.SuperSubClassTest
+com/jin/rose/CafeDrinkTest.java
+ com.jin.rose.CafeDrinkTest

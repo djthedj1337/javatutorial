@@ -8,6 +8,7 @@ public class SubExample extends SuperExample {
         super(num);
     }
 
+    @Override
     public void info() {
         System.out.println("Sub class method activated.");
     }
@@ -19,7 +20,7 @@ public class SubExample extends SuperExample {
         //call method of super class
         super.info();
     }
-
+    @Override
     public void move(){
         System.out.println("This is the subclass method that overrides the superclass method.");
     }
