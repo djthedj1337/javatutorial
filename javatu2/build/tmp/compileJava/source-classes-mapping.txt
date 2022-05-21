@@ -20,3 +20,9 @@ com/jin/rose/CafeDrinksAbstract.java
 com/jin/rose/StaticNested.java
  com.jin.rose.StaticNested
  com.jin.rose.StaticNested$StaticInner
+com/jin/rose/Teas.java
+ com.jin.rose.Teas
+com/jin/rose/Sodas.java
+ com.jin.rose.Sodas
+com/jin/rose/DrinksInterface.java
+ com.jin.rose.DrinksInterface
