@@ -26,3 +26,24 @@ com/jin/rose/Sodas.java
  com.jin.rose.Sodas
 com/jin/rose/DrinksInterface.java
  com.jin.rose.DrinksInterface
+com/jin/rose/StaticOuterAccess.java
+ com.jin.rose.StaticOuterAccess
+ com.jin.rose.StaticOuterAccess$StaticInnerAccess
+com/jin/rose/EmployeeAbstract.java
+ com.jin.rose.EmployeeAbstract
+com/jin/rose/SoftwareEngineer.java
+ com.jin.rose.SoftwareEngineer
+com/jin/rose/Shapes/Shape.java
+ com.jin.rose.Shapes.Shape
+com/jin/rose/QAEngineer.java
+ com.jin.rose.QAEngineer
+com/jin/rose/Physician.java
+ com.jin.rose.Physician
+com/jin/rose/MedicalStaff.java
+ com.jin.rose.MedicalStaff
+com/jin/rose/Shapes/Circle.java
+ com.jin.rose.Shapes.Circle
+com/jin/rose/Shapes/Rectangle.java
+ com.jin.rose.Shapes.Rectangle
+com/jin/rose/Shapes/Triangle.java
+ com.jin.rose.Shapes.Triangle

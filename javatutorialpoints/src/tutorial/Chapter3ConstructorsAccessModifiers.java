@@ -7,12 +7,11 @@ public class Chapter3ConstructorsAccessModifiers {
 /*
 Variables:
 - Local : Defined inside methods, constructors, and/or blocks; declared and initialized at start of method and destroyed with method completion
-- Instance: Defined in class, outside method, intialized when class instantiated, can be accessed inside a meothd, contructor, or block from that class
+- Instance: Defined in class, outside method, initialized when class instantiated, can be accessed inside a method, constructor, or block from that class
 - Class: Defined in class with static keyword
 
 Constructors:
 - Compiler will build default constructor for you, one constructor must be invoked but can have multiple constructors
-
 
 Creating Object:
 - Declaration: variable name with object type

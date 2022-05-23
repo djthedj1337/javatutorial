@@ -10,6 +10,9 @@ Collections Framework:
 ** contains interfaces, implementations, algorithms
 '
 
+Collections Interfaces:
+- List: 
+
 LinkedList:
 - extends AbstractSequentialList + implements List interface
 - data stored as separate object with data part and address part
@@ -56,10 +59,9 @@ TreeMap:
 - sorted order for sorted info for sorted rapid retrieval
 - GUARANTEES it will be sorted in ascending order (unlike Hash map)
 
-Weak HashMaps?
+HashMap
 
-LinkedHashMaps:
--contains linked list of entries, allows for insertion-order
+Concurrent HashMap
 
-Identity HashMap?
+Properties HashMap
  */
