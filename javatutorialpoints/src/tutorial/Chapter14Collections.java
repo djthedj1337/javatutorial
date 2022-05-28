@@ -11,7 +11,12 @@ Collections Framework:
 '
 
 Collections Interfaces:
-- List: 
+- List: can insert/access position in list, duplicate elements allowed
+- Set: stronger contract on equals, no duplicate elements
+- SortedSet: extends Set, ascending order, otherwise the same
+- Map: key and value pairs, .entrySet() allows Map interface to return a Set containing map entries
+- SortedMap: extends Map, ascending order
+
 
 LinkedList:
 - extends AbstractSequentialList + implements List interface
@@ -59,9 +64,17 @@ TreeMap:
 - sorted order for sorted info for sorted rapid retrieval
 - GUARANTEES it will be sorted in ascending order (unlike Hash map)
 
-HashMap
+HashMap:
+- Non-synchronized, allows one null key and multiple null values
+-
 
-Concurrent HashMap
+Concurrent HashMap:
+- implements concurrent map interface and serializable interface, extends AbstractMap
+- thread safe, divided into a number of segmenets
+- better than hashmap performance wise in dealing with threads
+- null object is not possible
+**thread locks particular segment in which thread wants to work in, "segment locking" and"bucket locking"
 
 Properties HashMap
+- key-value pairs are String, subclass of HashTable
  */

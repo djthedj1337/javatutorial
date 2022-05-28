@@ -1,4 +1,4 @@
-package com.jin.rose;
+package com.jin.rose.Employee;
 
 public abstract class EmployeeAbstract {
 

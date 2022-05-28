@@ -1,6 +1,9 @@
-package com.jin.rose;
+package com.jin.rose.Employee;
 
-import java.sql.Array;
+import com.jin.rose.Employee.EmployeeAbstract;
+import com.jin.rose.Employee.QAEngineer;
+import com.jin.rose.Employee.SoftwareEngineer;
+
 import java.util.ArrayList;
 
 public class EmployeeTest {

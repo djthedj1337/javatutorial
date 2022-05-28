@@ -1,23 +1,27 @@
+com/jin/rose/StaticInnerAccessTest.java
+ com.jin.rose.StaticInnerAccessTest
+com/jin/rose/SuperSubClassTest.java
+ com.jin.rose.SuperSubClassTest
+com/jin/rose/ShapeTest.java
+ com.jin.rose.ShapeTest
+com/jin/rose/StackTest.java
+ com.jin.rose.StackTest
+com/jin/rose/SystemPropertiesTest.java
+ com.jin.rose.SystemPropertiesTest
+com/jin/rose/ExceptionTest.java
+ com.jin.rose.ExceptionTest
 com/jin/rose/InterfaceTest.java
  com.jin.rose.InterfaceTest
 com/jin/rose/CafeDrinkTest.java
  com.jin.rose.CafeDrinkTest
-com/jin/rose/StaticInnerAccessTest.java
- com.jin.rose.StaticInnerAccessTest
 com/jin/rose/PersonTest.java
  com.jin.rose.PersonTest
-com/jin/rose/SuperSubClassTest.java
- com.jin.rose.SuperSubClassTest
+com/jin/rose/UniqueDigits.java
+ com.jin.rose.UniqueDigits
 com/jin/rose/AnonymousInnerTest.java
  com.jin.rose.AnonymousInnerTest
  com.jin.rose.AnonymousInnerTest$1
-com/jin/rose/ExceptionTest.java
- com.jin.rose.ExceptionTest
-com/jin/rose/StackTest.java
- com.jin.rose.StackTest
 com/jin/rose/StaticVNonStaticInnerTest.java
  com.jin.rose.StaticVNonStaticInnerTest
-com/jin/rose/EmployeeTest.java
- com.jin.rose.EmployeeTest
-com/jin/rose/ShapeTest.java
- com.jin.rose.ShapeTest
+com/jin/rose/UniqueDigits2.java
+ com.jin.rose.UniqueDigits2

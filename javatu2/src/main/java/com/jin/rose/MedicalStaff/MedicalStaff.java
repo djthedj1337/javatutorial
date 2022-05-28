@@ -1,4 +1,4 @@
-package com.jin.rose;
+package com.jin.rose.MedicalStaff;
 
 public class MedicalStaff {
     public void diagnose(){

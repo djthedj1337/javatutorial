@@ -1,4 +1,6 @@
-package com.jin.rose;
+package com.jin.rose.Drinks;
+
+import com.jin.rose.Drinks.DrinksInterface;
 
 public class Sodas implements DrinksInterface {
 

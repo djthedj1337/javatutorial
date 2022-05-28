@@ -1,7 +1,7 @@
-package com.jin.rose;
+package com.jin.rose.Employee;
 
 //Polymorphism, IS-A + Abstraction, Inheritance
-public class QAEngineer extends EmployeeAbstract{
+public class QAEngineer extends EmployeeAbstract {
 
     //Encapsulation
 

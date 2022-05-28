@@ -1,4 +1,4 @@
-package com.jin.rose;
+package com.jin.rose.Drinks;
 
 public class CafeLatte extends CafeDrinksAbstract {
     private double extraPrice = 0;

@@ -1,6 +1,7 @@
 package com.jin.rose;
 
-import org.junit.jupiter.api.Test;
+import com.jin.rose.Checkings.CheckingsAccount;
+import com.jin.rose.Checkings.InsufficientFundsException;
 
 
 public class ExceptionTest {

@@ -1,5 +1,7 @@
 package com.jin.rose;
 
+import com.jin.rose.Drinks.CafeLatte;
+
 public class CafeDrinkTest {
     public static void main(String[] args){
         CafeLatte m = new CafeLatte();

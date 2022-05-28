@@ -1,4 +1,4 @@
-package com.jin.rose;
+package com.jin.rose.Checkings;
 
 
 public class InsufficientFundsException extends Exception {

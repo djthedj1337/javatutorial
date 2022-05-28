@@ -1,4 +1,4 @@
-package com.jin.rose;
+package com.jin.rose.Drinks;
 
 public abstract class CafeDrinksAbstract {
     private String name;
