@@ -49,3 +49,7 @@ com/jin/rose/Employee/EmployeeAbstract.java
  com.jin.rose.Employee.EmployeeAbstract
 com/jin/rose/Drinks/Sodas.java
  com.jin.rose.Drinks.Sodas
+com/jin/rose/RunnableThread.java
+ com.jin.rose.RunnableThread
+com/jin/rose/ExtendThread.java
+ com.jin.rose.ExtendThread

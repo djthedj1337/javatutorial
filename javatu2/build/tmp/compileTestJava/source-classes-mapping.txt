@@ -6,16 +6,20 @@ com/jin/rose/ShapeTest.java
  com.jin.rose.ShapeTest
 com/jin/rose/StackTest.java
  com.jin.rose.StackTest
-com/jin/rose/SystemPropertiesTest.java
- com.jin.rose.SystemPropertiesTest
 com/jin/rose/ExceptionTest.java
  com.jin.rose.ExceptionTest
+com/jin/rose/SystemPropertiesTest.java
+ com.jin.rose.SystemPropertiesTest
+com/jin/rose/UniqueDigits2.java
+ com.jin.rose.UniqueDigits2
 com/jin/rose/InterfaceTest.java
  com.jin.rose.InterfaceTest
 com/jin/rose/CafeDrinkTest.java
  com.jin.rose.CafeDrinkTest
 com/jin/rose/PersonTest.java
  com.jin.rose.PersonTest
+com/jin/rose/ThreadTest.java
+ com.jin.rose.ThreadTest
 com/jin/rose/UniqueDigits.java
  com.jin.rose.UniqueDigits
 com/jin/rose/AnonymousInnerTest.java
@@ -23,5 +27,7 @@ com/jin/rose/AnonymousInnerTest.java
  com.jin.rose.AnonymousInnerTest$1
 com/jin/rose/StaticVNonStaticInnerTest.java
  com.jin.rose.StaticVNonStaticInnerTest
-com/jin/rose/UniqueDigits2.java
- com.jin.rose.UniqueDigits2
+com/jin/rose/DuplicatesArray2.java
+ com.jin.rose.DuplicatesArray2
+com/jin/rose/DuplicatesArray.java
+ com.jin.rose.DuplicatesArray
