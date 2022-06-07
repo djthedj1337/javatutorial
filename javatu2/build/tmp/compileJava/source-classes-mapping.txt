@@ -1,7 +1,7 @@
 com/jin/rose/SuperExample.java
  com.jin.rose.SuperExample
-com/jin/rose/Shapes/Shape.java
- com.jin.rose.Shapes.Shape
+com/jin/rose/Drinks/Sodas.java
+ com.jin.rose.Drinks.Sodas
 com/jin/rose/NonStaticNested.java
  com.jin.rose.NonStaticNested
  com.jin.rose.NonStaticNested$NonStaticInner
@@ -27,14 +27,14 @@ com/jin/rose/Checkings/InsufficientFundsException.java
  com.jin.rose.Checkings.InsufficientFundsException
 com/jin/rose/Employee/SoftwareEngineer.java
  com.jin.rose.Employee.SoftwareEngineer
-com/jin/rose/Shapes/Circle.java
- com.jin.rose.Shapes.Circle
+com/jin/rose/ExtendThread.java
+ com.jin.rose.ExtendThread
 com/jin/rose/MedicalStaff/Physician.java
  com.jin.rose.MedicalStaff.Physician
-com/jin/rose/Shapes/Rectangle.java
- com.jin.rose.Shapes.Rectangle
-com/jin/rose/Shapes/Triangle.java
- com.jin.rose.Shapes.Triangle
+com/jin/rose/RunnableThread.java
+ com.jin.rose.RunnableThread
+com/jin/rose/Employee/EmployeeAbstract.java
+ com.jin.rose.Employee.EmployeeAbstract
 com/jin/rose/Drinks/DrinksInterface.java
  com.jin.rose.Drinks.DrinksInterface
 com/jin/rose/Employee/EmployeeTest.java
@@ -45,11 +45,26 @@ com/jin/rose/Drinks/Teas.java
  com.jin.rose.Drinks.Teas
 com/jin/rose/Checkings/CheckingsAccount.java
  com.jin.rose.Checkings.CheckingsAccount
-com/jin/rose/Employee/EmployeeAbstract.java
- com.jin.rose.Employee.EmployeeAbstract
-com/jin/rose/Drinks/Sodas.java
- com.jin.rose.Drinks.Sodas
-com/jin/rose/RunnableThread.java
- com.jin.rose.RunnableThread
-com/jin/rose/ExtendThread.java
- com.jin.rose.ExtendThread
+com/jin/rose/DesignPatterns/FactoryShapes/Circle.java
+ com.jin.rose.DesignPatterns.FactoryShapes.Circle
+com/jin/rose/DesignPatterns/Singleton/DavidComputerLazy.java
+ com.jin.rose.DesignPatterns.Singleton.DavidComputerLazy
+com/jin/rose/DesignPatterns/ExpertDelegate/Window.java
+ com.jin.rose.DesignPatterns.ExpertDelegate.Window
+com/jin/rose/DesignPatterns/FactoryShapes/Triangle.java
+ com.jin.rose.DesignPatterns.FactoryShapes.Triangle
+com/jin/rose/Threads/MyThread.java
+ com.jin.rose.Threads.MyThread
+com/jin/rose/DesignPatterns/FactoryShapes/Shape.java
+ com.jin.rose.DesignPatterns.FactoryShapes.Shape
+com/jin/rose/DesignPatterns/FactoryShapes/Rectangle.java
+ com.jin.rose.DesignPatterns.FactoryShapes.Rectangle
+com/jin/rose/DesignPatterns/Builder/McDonaldsMeal.java
+ com.jin.rose.DesignPatterns.Builder.McDonaldsMeal
+com/jin/rose/DesignPatterns/FactoryShapes/ShapeFactory.java
+ com.jin.rose.DesignPatterns.FactoryShapes.ShapeFactory
+com/jin/rose/DesignPatterns/Singleton/DavidComputerBillPugh.java
+ com.jin.rose.DesignPatterns.Singleton.DavidComputerBillPugh
+ com.jin.rose.DesignPatterns.Singleton.DavidComputerBillPugh$BillPughSingleton
+com/jin/rose/DesignPatterns/Singleton/DavidComputerEager.java
+ com.jin.rose.DesignPatterns.Singleton.DavidComputerEager

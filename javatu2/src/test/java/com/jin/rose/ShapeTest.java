@@ -1,9 +1,9 @@
 package com.jin.rose;
 
-import com.jin.rose.Shapes.Circle;
-import com.jin.rose.Shapes.Rectangle;
-import com.jin.rose.Shapes.Shape;
-import com.jin.rose.Shapes.Triangle;
+import com.jin.rose.DesignPatterns.FactoryShapes.Circle;
+import com.jin.rose.DesignPatterns.FactoryShapes.Rectangle;
+import com.jin.rose.DesignPatterns.FactoryShapes.Shape;
+import com.jin.rose.DesignPatterns.FactoryShapes.Triangle;
 
 import java.util.ArrayList;
 import java.util.List;

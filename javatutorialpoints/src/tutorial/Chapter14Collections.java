@@ -18,6 +18,7 @@ Collections Interfaces:
 - SortedMap: extends Map, ascending order
 
 
+
 LinkedList:
 - extends AbstractSequentialList + implements List interface
 - data stored as separate object with data part and address part

@@ -17,5 +17,7 @@ POJO: Plain Old Java Object
 MVC: Model View Controller
 - Model = defines data structure, i.e. POJO
 - View = defines display (Postman?)
-- Controller = contains control logic i.e. business logic 
+- Controller = contains control logic i.e. business logic
+
+**Error 400s are client based, Error 500s are server based
  */
