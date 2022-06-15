@@ -6,3 +6,11 @@ com/jin/search/model/Product.java
  com.jin.search.model.Product
 com/jin/search/controller/ProductServiceController.java
  com.jin.search.controller.ProductServiceController
+com/jin/restaurantguide/GuideDemoApplication.java
+ com.jin.restaurantguide.GuideDemoApplication
+com/jin/restaurantguide/model/Restaurant.java
+ com.jin.restaurantguide.model.Restaurant
+com/jin/restaurantguide/model/Location.java
+ com.jin.restaurantguide.model.Location
+com/jin/restaurantguide/controller/GuideServiceController.java
+ com.jin.restaurantguide.controller.GuideServiceController

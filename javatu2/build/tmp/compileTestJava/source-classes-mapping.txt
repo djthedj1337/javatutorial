@@ -1,5 +1,9 @@
 com/jin/rose/StaticInnerAccessTest.java
  com.jin.rose.StaticInnerAccessTest
+com/jin/rose/exercise8/Substrings.java
+ com.jin.rose.exercise8.Substrings
+com/jin/rose/exercise8/ContainerWithWater.java
+ com.jin.rose.exercise8.ContainerWithWater
 com/jin/rose/exercise6/ShapeFactoryTest.java
  com.jin.rose.exercise6.ShapeFactoryTest
 com/jin/rose/ShapeTest.java
@@ -10,16 +14,26 @@ com/jin/rose/exercise5/Anagram.java
  com.jin.rose.exercise5.Anagram
 com/jin/rose/InterfaceTest.java
  com.jin.rose.InterfaceTest
-com/jin/rose/ExceptionTest.java
- com.jin.rose.ExceptionTest
+com/jin/rose/RaceCondition.java
+ com.jin.rose.RaceCondition
+ com.jin.rose.RaceCondition$Item
+ com.jin.rose.RaceCondition$MyThread
 com/jin/rose/PersonTest.java
  com.jin.rose.PersonTest
 com/jin/rose/exercise4/DuplicatesArray.java
  com.jin.rose.exercise4.DuplicatesArray
 com/jin/rose/exercise6/BuilderTest.java
  com.jin.rose.exercise6.BuilderTest
+com/jin/rose/ExceptionTest.java
+ com.jin.rose.ExceptionTest
 com/jin/rose/exercise5/RedWhiteBlue.java
  com.jin.rose.exercise5.RedWhiteBlue
+com/jin/rose/exercise8/Pair.java
+ com.jin.rose.exercise8.Pair
+com/jin/rose/exercise8/PathMaxSum.java
+ com.jin.rose.exercise8.PathMaxSum
+com/jin/rose/exercise8/ListNode.java
+ com.jin.rose.exercise8.ListNode
 com/jin/rose/exercise6/SingletonTest.java
  com.jin.rose.exercise6.SingletonTest
 com/jin/rose/exercise4/DuplicatesArray2.java
@@ -34,19 +48,27 @@ com/jin/rose/exercise5/RedWhiteBlue2.java
  com.jin.rose.exercise5.RedWhiteBlue2
 com/jin/rose/SuperSubClassTest.java
  com.jin.rose.SuperSubClassTest
+com/jin/rose/JDBC/JDBCtest.java
+ com.jin.rose.JDBC.JDBCtest
 com/jin/rose/exercise5/Tuples.java
  com.jin.rose.exercise5.Tuples
  com.jin.rose.exercise5.Tuples$Triplet
+com/jin/rose/exercise9/MaxPaths.java
+ com.jin.rose.exercise9.MaxPaths
 com/jin/rose/SystemPropertiesTest.java
  com.jin.rose.SystemPropertiesTest
 com/jin/rose/UniqueDigits2.java
  com.jin.rose.UniqueDigits2
 com/jin/rose/CafeDrinkTest.java
  com.jin.rose.CafeDrinkTest
+com/jin/rose/exercise8/LinkedListCycle.java
+ com.jin.rose.exercise8.LinkedListCycle
 com/jin/rose/exercise4/DuplicatesArray3.java
  com.jin.rose.exercise4.DuplicatesArray3
 com/jin/rose/ThreadTest.java
  com.jin.rose.ThreadTest
+com/jin/rose/exercise8/LargestVariance.java
+ com.jin.rose.exercise8.LargestVariance
 com/jin/rose/UniqueDigits.java
  com.jin.rose.UniqueDigits
 com/jin/rose/AnonymousInnerTest.java
@@ -54,11 +76,11 @@ com/jin/rose/AnonymousInnerTest.java
  com.jin.rose.AnonymousInnerTest$1
 com/jin/rose/exercise6/ExpertDelegateTest.java
  com.jin.rose.exercise6.ExpertDelegateTest
+com/jin/rose/exercise7/Staircase.java
+ com.jin.rose.exercise7.Staircase
+com/jin/rose/exercise7/Factorial.java
+ com.jin.rose.exercise7.Factorial
 com/jin/rose/StaticVNonStaticInnerTest.java
  com.jin.rose.StaticVNonStaticInnerTest
-com/jin/rose/RaceCondition.java
- com.jin.rose.RaceCondition
- com.jin.rose.RaceCondition$Item
- com.jin.rose.RaceCondition$MyThread
-com/jin/rose/JDBC/JDBCtest.java
- com.jin.rose.JDBC.JDBCtest
+com/jin/rose/exercise9/MaxSum.java
+ com.jin.rose.exercise9.MaxSum
