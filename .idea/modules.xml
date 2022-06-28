@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Interview.iml" filepath="$PROJECT_DIR$/.idea/modules/Interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringBootTest.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringBootTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/javatutorialpoints/proj1.iml" filepath="$PROJECT_DIR$/javatutorialpoints/proj1.iml" />
     </modules>

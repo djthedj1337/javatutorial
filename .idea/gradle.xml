@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Interview" />
             <option value="$PROJECT_DIR$/SpringBootTest" />
             <option value="$PROJECT_DIR$/javatu2" />
           </set>

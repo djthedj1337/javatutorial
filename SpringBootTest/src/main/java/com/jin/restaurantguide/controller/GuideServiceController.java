@@ -8,14 +8,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.*;
+
+import java.sql.*;
 
 @RestController
 public class GuideServiceController {
+    /*
+}
     private static Map<Long, Location> locationRepo = new HashMap<>();
     private static Map<Long, Restaurant> restaurantRepo = new HashMap<>();
-
+/*
     static {
         Restaurant sideshowKitchen = new Restaurant();
         sideshowKitchen.setRestaurantID(1);
@@ -80,62 +86,157 @@ public class GuideServiceController {
         System.out.println("Location Map: " + locationRepo);
 
     }
+    */
 
-    @RequestMapping(value = "/restaurants/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<Object> delete(@PathVariable("id") Long id) {
-        restaurantRepo.remove(id);
-        return new ResponseEntity<>("Restaurant " + restaurantRepo.get(id).getRestaurantName() + " has been deleted successfully", HttpStatus.OK);
+
+    @RequestMapping(value = "/restaurants/{restaurantID}", method = RequestMethod.DELETE)
+    public ResponseEntity<Object> delete(@PathVariable("restaurantID") Integer restaurantID) {
+        //restaurantRepo.remove(id);
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate("delete from Restaurants where RestaurantID =" + restaurantID);
+        } catch(Exception e){ System.out.println(e);}
+        return new ResponseEntity<>("Restaurant has been deleted successfully", HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/restaurants/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Object> updateRestaurant(@PathVariable("id") Long id, @RequestBody Restaurant restaurant) {
-        restaurantRepo.remove(id);
-        restaurant.setRestaurantID(id);
-        restaurantRepo.put(id, restaurant);
-        return new ResponseEntity<>("Restaurant " + restaurantRepo.get(id).getRestaurantName() + " has been updated successfully", HttpStatus.OK);
+    @RequestMapping(value = "/restaurants/{restaurantID}", method = RequestMethod.PUT)
+    public ResponseEntity<Object> updateRestaurant(@PathVariable("restaurantID") Integer restaurantID, @RequestParam String restaurantName, @RequestParam String cuisine, @RequestParam String dollarSigns) {
+        // restaurantRepo.remove(id);
+        //restaurant.setRestaurantID(id);
+        //restaurantRepo.put(id, restaurant);
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("update Restaurants set RestaurantName = " + restaurantName + ", Cuisine = " + cuisine + ", DollarSigns = " + dollarSigns+ " where RestaurantID =" + restaurantID);
+        } catch(Exception e){ System.out.println(e);}
+
+
+        return new ResponseEntity<>("Restaurant has been updated successfully", HttpStatus.OK);
     }
 
     @RequestMapping(value = "/restaurants", method = RequestMethod.POST)
-    public ResponseEntity<Object> createRestaurant(@RequestBody Restaurant restaurant) {
-        restaurantRepo.put(restaurant.getRestaurantID(), restaurant);
-        return new ResponseEntity<>("Restaurant " + restaurant.getRestaurantName() + " has been created successfully", HttpStatus.CREATED);
+    public ResponseEntity<Object> createRestaurant(@RequestParam Integer restaurantID, @RequestParam String restaurantName, @RequestParam String cuisine, @RequestParam String dollarSigns) {
+        //restaurantRepo.put(restaurant.getRestaurantID(), restaurant);
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("insert into Restaurants value(" + restaurantID + ", " + restaurantName + ", " + cuisine + ", " + dollarSigns + ")");
+
+        } catch(Exception e){ System.out.println(e);}
+        return new ResponseEntity<>("Restaurant has been created successfully", HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/restaurants", method = RequestMethod.GET)
-    public ResponseEntity<Object> getRestaurant() {
+    public ResponseEntity<Object> getRestaurants() {
         //int x = 1/0; to create exception
-        return new ResponseEntity<>(restaurantRepo.values(), HttpStatus.OK);
+        Map<Integer ,String> restaurants = new HashMap<>();
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+
+            ResultSet rs=stmt.executeQuery("select * from Restaurants");
+            while(rs.next())
+                restaurants.put(rs.getInt(1), rs.getInt(1)+", "+ rs.getString(2) + ", " + rs.getString(3) + ", " + rs.getString(4));
+            con.close();
+
+        } catch(Exception e){ System.out.println(e);}
+        return new ResponseEntity<>(restaurants.values() ,HttpStatus.OK);
     }
 
     @RequestMapping(value = "/locations/{locationID}", method = RequestMethod.DELETE)
-    public ResponseEntity<Object> deleteLocation(@PathVariable("customerID") Long locationID) {
-        locationRepo.remove(locationID);
-        return new ResponseEntity<>("Location " + locationRepo.get(locationID).getLocationCityState() + " has been deleted successfully", HttpStatus.OK);
+    public ResponseEntity<Object> deleteLocation(@PathVariable("locationID") Integer locationID) {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con= DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("delete from Locations where LocationID =" + locationID);
+            con.close();
+
+        } catch(Exception e){ System.out.println(e);}
+        return new ResponseEntity<>("Location has been deleted successfully", HttpStatus.OK);
     }
 
     @RequestMapping(value = "/locations/{locationID}", method = RequestMethod.PUT)
-    public ResponseEntity<Object> updateLocation(@PathVariable("locationID") Long locationID, @RequestBody Location location) {
-        locationRepo.remove(locationID);
-        locationRepo.put(locationID, location);
-        return new ResponseEntity<>("Location " + location.getLocationCityState() + " has updated successfully", HttpStatus.OK);
+    public ResponseEntity<Object> updateLocation(@PathVariable("locationID") Integer locationID, @RequestParam String locationName, @RequestParam String locationState) {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con= DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("update Locations set LocationName =" + locationName + ", LocationState =" + locationState + "where LocationID =" + locationID);
+            con.close();
+
+        } catch(Exception e){ System.out.println(e);}
+        return new ResponseEntity<>("Location has updated successfully", HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/locations/{locationID}/rankings", method = RequestMethod.PUT)
-    public ResponseEntity<Object> updateLocationRankings(@PathVariable("locationID") Long locationID, @RequestParam Long restaurantID, @RequestParam Double ranking) {
-        locationRepo.get(locationID).addRankings(restaurantID, ranking);
+    @RequestMapping(value = "/rankings/{restaurantID}", method = RequestMethod.PUT)
+    public ResponseEntity<Object> updateRankings(@PathVariable("restaurantID") Integer restaurantID, @RequestParam Double ranking) {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con= DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("update Rankings set Ranking =" + ranking + "where RestaurantID =" + restaurantID);
+            con.close();
+
+        } catch(Exception e){ System.out.println(e);}
+
         return new ResponseEntity<>("Location Rankings has updated successfully", HttpStatus.OK);
     }
 
 
     @RequestMapping(value = "/locations", method = RequestMethod.POST)
-    public ResponseEntity<Object> createLocation(@RequestBody Location location) {
-        locationRepo.put(location.getLocationID(), location);
+    public ResponseEntity<Object> createLocation(@RequestParam Integer locationID, @RequestParam String locationName, @RequestParam String locationState) {
+        //locationRepo.put(location.getLocationID(), location);
+        //System.out.println("Outside try catch");
+
+        try{
+            System.out.println("Inside try catch");
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con= DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            stmt.executeUpdate("insert into Locations values (" + locationID + "," + locationName + "," + locationState + ")");
+            con.close();
+
+        } catch(Exception e){ System.out.println(e);}
+        //System.out.println("Finished try catch");
+
         return new ResponseEntity<>("Location has been created successfully", HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/locations", method = RequestMethod.GET)
-    public ResponseEntity<Object> getLocation() {
-        return new ResponseEntity<>(locationRepo.values(), HttpStatus.OK);
+    public ResponseEntity<Object> getLocations() {
+        Map<Integer ,String> locations = new HashMap<>();
+        System.out.println("Check check");
+
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con= DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/RestaurantGuide","root","Knights123*");
+            Statement stmt=con.createStatement();
+            ResultSet rs=stmt.executeQuery("select * from Locations");
+            while(rs.next()){
+                locations.put(rs.getInt(1), rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3));
+            }
+            con.close();
+
+        } catch(Exception e){ System.out.println(e);}
+
+        return new ResponseEntity<>(locations.values(), HttpStatus.OK);
+
+
     }
 }
 

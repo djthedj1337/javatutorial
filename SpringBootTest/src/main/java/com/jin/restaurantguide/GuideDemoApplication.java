@@ -10,4 +10,8 @@ public class GuideDemoApplication {
     }
 }
 
+//MySQL cmd DBA manually used to create schema to migrate
+//postman/online services used to retrieve data and update , not used to create tables
+//JDBC is a client side library/protocol how to contact JDBC server aka mySQL server/Oracle
+
 

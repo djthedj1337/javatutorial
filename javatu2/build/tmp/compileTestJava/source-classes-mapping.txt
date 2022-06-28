@@ -18,16 +18,16 @@ com/jin/rose/RaceCondition.java
  com.jin.rose.RaceCondition
  com.jin.rose.RaceCondition$Item
  com.jin.rose.RaceCondition$MyThread
-com/jin/rose/PersonTest.java
- com.jin.rose.PersonTest
+com/jin/rose/exercise5/RedWhiteBlue.java
+ com.jin.rose.exercise5.RedWhiteBlue
 com/jin/rose/exercise4/DuplicatesArray.java
  com.jin.rose.exercise4.DuplicatesArray
 com/jin/rose/exercise6/BuilderTest.java
  com.jin.rose.exercise6.BuilderTest
 com/jin/rose/ExceptionTest.java
  com.jin.rose.ExceptionTest
-com/jin/rose/exercise5/RedWhiteBlue.java
- com.jin.rose.exercise5.RedWhiteBlue
+com/jin/rose/JDBC/Location.java
+ com.jin.rose.JDBC.Location
 com/jin/rose/exercise8/Pair.java
  com.jin.rose.exercise8.Pair
 com/jin/rose/exercise8/PathMaxSum.java
@@ -48,13 +48,13 @@ com/jin/rose/exercise5/RedWhiteBlue2.java
  com.jin.rose.exercise5.RedWhiteBlue2
 com/jin/rose/SuperSubClassTest.java
  com.jin.rose.SuperSubClassTest
-com/jin/rose/JDBC/JDBCtest.java
- com.jin.rose.JDBC.JDBCtest
+com/jin/rose/exercise9/MaxSum.java
+ com.jin.rose.exercise9.MaxSum
 com/jin/rose/exercise5/Tuples.java
  com.jin.rose.exercise5.Tuples
  com.jin.rose.exercise5.Tuples$Triplet
-com/jin/rose/exercise9/MaxPaths.java
- com.jin.rose.exercise9.MaxPaths
+com/jin/rose/StaticVNonStaticInnerTest.java
+ com.jin.rose.StaticVNonStaticInnerTest
 com/jin/rose/SystemPropertiesTest.java
  com.jin.rose.SystemPropertiesTest
 com/jin/rose/UniqueDigits2.java
@@ -80,7 +80,15 @@ com/jin/rose/exercise7/Staircase.java
  com.jin.rose.exercise7.Staircase
 com/jin/rose/exercise7/Factorial.java
  com.jin.rose.exercise7.Factorial
-com/jin/rose/StaticVNonStaticInnerTest.java
- com.jin.rose.StaticVNonStaticInnerTest
-com/jin/rose/exercise9/MaxSum.java
- com.jin.rose.exercise9.MaxSum
+com/jin/rose/exercise9/MaxPaths.java
+ com.jin.rose.exercise9.MaxPaths
+com/jin/rose/JDBC/JDBCtest.java
+ com.jin.rose.JDBC.JDBCtest
+com/jin/rose/JDBC/RestaurantGuideJDBC.java
+ com.jin.rose.JDBC.RestaurantGuideJDBC
+com/jin/rose/PersonXXXTest.java
+ com.jin.rose.PersonXXXTest
+com/jin/rose/XXXTest.java
+ com.jin.rose.XXXTest
+com/jin/rose/exercise9/LeastLarger.java
+ com.jin.rose.exercise9.LeastLarger

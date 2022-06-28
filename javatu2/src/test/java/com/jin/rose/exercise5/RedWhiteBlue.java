@@ -12,6 +12,7 @@ import java.util.Arrays;
 
 
 public class RedWhiteBlue {
+
     public static void main(String[] args) {
         int[] rwb = {2, 0, 2, 1, 1, 0};
         int r = 0;

@@ -5,12 +5,36 @@ import java.util.Map;
 
 public class Location {
     private long locationID;
-    private String locationCityState;
+    private String locationName;
+    private String locationState;
     private Map<Long, Double> rankings = new HashMap<>();
+
+
+    public Location(long locationID, String locationName, String locationState){
+        this.locationID = locationID;
+        this.locationName = locationName;
+        this.locationState = locationState;
+    }
 
     @Override
     public String toString(){
-        return "This location's information: " + locationID + ", " + locationCityState;
+        return locationID + " " + locationName + " " + locationState;
+    }
+
+    public String getLocationName() {
+        return locationName;
+    }
+
+    public void setLocationName(String locationName) {
+        this.locationName = locationName;
+    }
+
+    public String getLocationState() {
+        return locationState;
+    }
+
+    public void setLocationState(String locationState) {
+        this.locationState = locationState;
     }
 
 
@@ -22,13 +46,7 @@ public class Location {
         this.locationID = locationID;
     }
 
-    public String getLocationCityState() {
-        return locationCityState;
-    }
 
-    public void setLocationCityState(String locationCityState) {
-        this.locationCityState = locationCityState;
-    }
 
     public Map<Long, Double> getRankings() {
         return rankings;

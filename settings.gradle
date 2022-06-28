@@ -1,4 +1,5 @@
 include 'javatu2'
 include 'javatu2'
 include 'SpringBootTest'
+include 'Interview'
 
